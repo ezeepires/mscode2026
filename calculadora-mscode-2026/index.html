@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - MSCode - 2026</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+</head>
+<body class="p-6 flex">
+    <div>
+        <div class="flex gap-16 flex-row pb-6">
+            <div class="flex gap-4 flex-row">
+                <input class="w-70 h-12 border rounded-lg p-2" type="number" name="entrada1" id="entrada1">
+                <input class="w-70 h-12 border rounded-lg p-2" type="number" name="entrada1" id="entrada2">
+            </div>
+            <div class="flex gap-4 flex-row items-center">
+                <button onclick="adicao()" class="w-20 h-12 border rounded-lg text-4xl">+</button>
+                <button onclick="subtracao()" class="w-20 h-12 border rounded-lg text-4xl">-</button>
+                <button onclick="multiplicar()" class="w-20 h-12 border rounded-lg text-4xl">*</button>
+                <button onclick="divisao()" class="w-20 h-12 border rounded-lg text-4xl">/</button>
+            </div>
+        </div>
+
+        <div class="rounded-lg w-144 h-12 border items-center flex p-2">
+            <p id="resultado"></p>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
